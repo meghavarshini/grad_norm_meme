@@ -24,6 +24,8 @@ ggplot(d, aes(trainig_step, grad_norm)) + geom_image(aes(image=image), size=.13)
     axis.text.x = element_blank(),
     axis.text.y = element_blank(),
     axis.ticks = element_blank(),
-    axis.title=element_text(size=24,face="bold")
-    )+ xlab("Training Steps") + ylab("Grad Norm")
+    axis.title=element_text(size=24,face="bold"),
+    plot.title = element_text(size=28,face="bold",color = "dark grey", hjust=0.45, vjust=-10)
+    )+ xlab("Training Steps") + ylab("Grad Norm")+
+  ggtitle("My Title")
 
